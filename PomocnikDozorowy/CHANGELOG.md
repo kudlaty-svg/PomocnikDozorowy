@@ -7,7 +7,14 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Przy wydaniu przenieś wpisy z sekcji Unreleased do odpowiedniej wersji (z datą).
 
 ## [Unreleased]
-
+- Dodano nowe okno po kliknięciu przycisku "Dźwignice".
+- Dodano opcje wyboru ID dźwignicy z listy rozwijanej.
+- Dodano CheckBox do aktywacji edycji poszczególnych pól.
+- Zmiany w kodzie obsługującym przyciski i pola tekstowe.
+- Poprawka nazwy okna z "Dzwignice" na "Dźwignice"."
+- Dodano komentarze w kodzie dla lepszej czytelności.
+- Dodano Dane techniczne dźwignic, w module "Dźwignice".
+- Tymczasowe dane techniczne dla dźwignic, do dalszej edycji.
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.

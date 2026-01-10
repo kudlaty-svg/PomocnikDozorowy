@@ -42,11 +42,13 @@ namespace PomocnikDozorowy
         }
 
         /// <summary>
-        /// Wyświetla informacje o tym że moduł jest w budowie.
+        /// Otwiera moduł Dźwignice.
         /// </summary>
         private void dzwignice_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Moduł Dźwignice jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+            //MessageBox.Show("Moduł Dźwignice jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+            Dzwignice dzwignice = new Dzwignice();
+            dzwignice.Show();
         }
 
         /// <summary>
