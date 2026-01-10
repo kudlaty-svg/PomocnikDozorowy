@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PomocnikDozorowy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
+        <Label Content="Wybierz grupę urządzeń&#10;    transportu bliskiego" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Dźwignice" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button Content="Wózki jezdniowe" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button Content="Inne" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button Content="Wyjście" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Label Content="Informacje o wersji: " HorizontalAlignment="Left" Margin="130,330,0,0" VerticalAlignment="Top"/>
+        <Button Content="?" HorizontalAlignment="Left" Margin="245,333,0,0" VerticalAlignment="Top" Width="20" Height="20"/>
 
     </Grid>
 </Window>
