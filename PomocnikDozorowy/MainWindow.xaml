@@ -11,7 +11,7 @@
         <Button Content="Dźwignice" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
         <Button Content="Wózki jezdniowe" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
         <Button Content="Inne" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
-        <Button Content="Wyjście" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button x:Name="exit" Content="Wyjście" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="exit_Click"/>
         <Label  Content="Informacje o programie: " HorizontalAlignment="Left" Margin="105,330,0,0" VerticalAlignment="Top"/>
         <Button x:Name="InfoProgr" Content="?" HorizontalAlignment="Left" Margin="245,333,0,0" VerticalAlignment="Top" Width="20" Height="20" Click="InfoProgr_Click"/>
 

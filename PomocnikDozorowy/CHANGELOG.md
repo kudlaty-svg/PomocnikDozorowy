@@ -11,6 +11,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Zmieniono nazwę z "Informacja o wersji" na "Informacja o programie
 - uaktualniono informacje o wersji do 0.0.1a (Alpha)
 - Zmieniono nazwę strony głównej z "MainWindow" na "Pomocnik Dozorowy pre-alpha"
+- Przycisk "Wyjście" działa poprawnie i zamyka aplikację.
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.

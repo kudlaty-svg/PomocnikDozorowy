@@ -30,5 +30,15 @@ namespace PomocnikDozorowy
                 "            o UTB w jednym miejscu!\n\n" +
                 "            © 2024 Pomocnik Dozorowy Team v0.0.0", "Informacje o programie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        /// <summary>
+        /// Wyłącza aplikację.
+        /// </summary>
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Zamykasz program Pomocnik Dozorowy", "Zamykanie programu", MessageBoxButton.OK, MessageBoxImage.Information);
+            Application.Current.Shutdown();
+        }
     }
 }
