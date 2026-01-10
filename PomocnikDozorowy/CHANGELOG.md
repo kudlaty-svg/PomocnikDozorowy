@@ -8,6 +8,9 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 
 ## [Unreleased]
 - Poprawiono poprawne wyświetlanie "Informacja o wersji" oraz przycisk ?
+- Zmieniono nazwę z "Informacja o wersji" na "Informacja o programie
+- uaktualniono informacje o wersji do 0.0.1a (Alpha)
+- Zmieniono nazwę strony głównej z "MainWindow" na "Pomocnik Dozorowy pre-alpha"
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.
