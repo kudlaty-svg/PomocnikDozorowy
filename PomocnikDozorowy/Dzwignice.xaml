@@ -1,0 +1,31 @@
+﻿<Window x:Class="PomocnikDozorowy.Dzwignice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PomocnikDozorowy"
+        mc:Ignorable="d"
+        Title="Dźwignice" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- GÓRNA CZĘŚĆ OKNA -->
+        <Label Content="Wybierz ID urządzenia" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="145,12,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Edycja" HorizontalAlignment="Left" Margin="320,16,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+        <!-- /// -->
+        <!-- DANE TECHNICZNE -->
+        <Rectangle HorizontalAlignment="Left" Margin="40,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Height="200"/>
+        <TextBox HorizontalAlignment="left" Margin="85,92,0,0" TextWrapping="Wrap" Text="DANE TECHNICZNE" VerticalAlignment="Top" Width="110" IsReadOnly="True" BorderBrush="Black" />
+        <TextBlock HorizontalAlignment="Left" Margin="50,125,0,0" TextWrapping="Wrap" Text="ID Dżwignicy" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="130,125,0,0" TextWrapping="Wrap" Text="684" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,155,0,0" TextWrapping="Wrap" Text="Nr Fabryczny" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="130,155,0,0" TextWrapping="Wrap" Text="011662" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,185,0,0" TextWrapping="Wrap" Text="Rok produkcji" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="130,185,0,0" TextWrapping="Wrap" Text="2023" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,215,0,0" TextWrapping="Wrap" Text="Udzwig nominalny" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="155,215,0,0" TextWrapping="Wrap" Text="6 + 6 T" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,245,0,0" TextWrapping="Wrap" Text="Producent" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="115,245,0,0" TextWrapping="Wrap" Text="FUD" VerticalAlignment="Top" Width="100"/>
+        <!-- /// -->
+    </Grid>
+</Window>
