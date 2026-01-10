@@ -7,11 +7,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Przy wydaniu przenieś wpisy z sekcji Unreleased do odpowiedniej wersji (z datą).
 
 ## [Unreleased]
-- Poprawiono poprawne wyświetlanie "Informacja o wersji" oraz przycisk ?
-- Zmieniono nazwę z "Informacja o wersji" na "Informacja o programie
-- uaktualniono informacje o wersji do 0.0.1a (Alpha)
-- Zmieniono nazwę strony głównej z "MainWindow" na "Pomocnik Dozorowy pre-alpha"
-- Przycisk "Wyjście" działa poprawnie i zamyka aplikację.
+
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.
@@ -22,6 +18,19 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawki błędów.
 
+## [0.0.1a] - 2026-01-11
+### Added
+- Uaktualniono informacje o wersji do 0.0.1a (Alpha)
+- Dodano informacje dla przycisków "Dźwignice", "Wózki jedzniowe" oraz "Inne".
+
+### Changed
+- Zmieniono nazwę strony głównej z "MainWindow" na "Pomocnik Dozorowy pre-alpha"
+- Przycisk "Wyjście" działa i wyświetla komunikat o zamknięciu aplikacji.
+
+### Fixed
+- Poprawiono drobne błędy w interfejsie użytkownika.
+- Poprawne wyświetlanie napisu "Informacje o programie", oraz przycisku "?".
+- 
 ## [0.0.0] - 2026-01-10
 ### Added
 - Pierwsze wydanie projektu.

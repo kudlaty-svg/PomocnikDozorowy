@@ -8,7 +8,7 @@
         Title="Pomocnik Dozorowy pre-alpha" Height="400" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Label Content="Wybierz grupę urządzeń&#10;    transportu bliskiego" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" FontStyle="Italic"/>
-        <Button Content="Dźwignice" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
+        <Button x:Name="dzwignice" Content="Dźwignice" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="dzwignice_Click"/>
         <Button Content="Wózki jezdniowe" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
         <Button Content="Inne" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="100" Height="25"/>
         <Button x:Name="exit" Content="Wyjście" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="exit_Click"/>

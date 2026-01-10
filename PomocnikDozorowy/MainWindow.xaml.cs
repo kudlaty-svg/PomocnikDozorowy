@@ -40,5 +40,13 @@ namespace PomocnikDozorowy
             MessageBox.Show("Zamykasz program Pomocnik Dozorowy", "Zamykanie programu", MessageBoxButton.OK, MessageBoxImage.Information);
             Application.Current.Shutdown();
         }
+
+        /// <summary>
+        /// Wyświetla informacje o tym że moduł jest w budowie.
+        /// </summary>
+        private void dzwignice_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Moduł Dźwignice jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
