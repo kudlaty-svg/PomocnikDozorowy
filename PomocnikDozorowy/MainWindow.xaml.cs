@@ -48,5 +48,21 @@ namespace PomocnikDozorowy
         {
             MessageBox.Show("Moduł Dźwignice jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        /// <summary>
+        /// Wyświetla informacje o tym że moduł jest w budowie.
+        /// </summary>
+        private void wozkiJezdniowe_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Moduł Wózki Jezdniowe jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        /// <summary>
+        /// Wyświetla informacje o tym że moduł jest w budowie.
+        /// </summary>
+        private void inne_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Moduł Inne jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
