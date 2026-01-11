@@ -15,6 +15,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Dodano komentarze w kodzie dla lepszej czytelności.
 - Dodano Dane techniczne dźwignic, w module "Dźwignice".
 - Tymczasowe dane techniczne dla dźwignic, do dalszej edycji.
+- Dodano Dane UDT w module "Dźwignice".
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.
