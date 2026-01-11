@@ -17,7 +17,7 @@
         <!-- /// -->
         <!-- DANE TECHNICZNE -->
         <Rectangle HorizontalAlignment="Left" Margin="40,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Height="200"/>
-        <TextBox HorizontalAlignment="left" Margin="85,92,0,0" TextWrapping="Wrap" Text="DANE TECHNICZNE" VerticalAlignment="Top" Width="110" IsReadOnly="True" BorderBrush="Black" />
+        <TextBox HorizontalAlignment="left" Margin="85,92,0,0" TextWrapping="Wrap" Text="DANE TECHNICZNE" VerticalAlignment="Top" Width="110" IsReadOnly="True" BorderBrush="Black" IsHitTestVisible="false"/>
         <TextBlock HorizontalAlignment="Left" Margin="50,125,0,0" TextWrapping="Wrap" Text="ID Dżwignicy" VerticalAlignment="Top"/>
         <TextBox x:Name="ID_Box" HorizontalAlignment="Left" Margin="130,125,0,0" TextWrapping="Wrap" Text="684" VerticalAlignment="Top" Width="100" IsEnabled="{Binding IsChecked, ElementName=EdytujPola}"/>
         <TextBlock HorizontalAlignment="Left" Margin="50,155,0,0" TextWrapping="Wrap" Text="Nr Fabryczny" VerticalAlignment="Top"/>
