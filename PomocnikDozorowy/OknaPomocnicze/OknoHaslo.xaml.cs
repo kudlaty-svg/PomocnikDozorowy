@@ -19,7 +19,7 @@ namespace PomocnikDozorowy.OknaPomocnicze
     /// </summary>
     public partial class OknoHaslo : Window
     {
-        bool IsAuthorized = false;
+        public bool IsAuthorized = false;
         public OknoHaslo()
         {
             InitializeComponent();
