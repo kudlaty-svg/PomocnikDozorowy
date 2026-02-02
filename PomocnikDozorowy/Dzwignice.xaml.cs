@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using PomocnikDozorowy.OknaPomocnicze;
 
 namespace PomocnikDozorowy
 {
@@ -29,6 +30,36 @@ namespace PomocnikDozorowy
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+
+        private void Edycja_Click(object sender, RoutedEventArgs e)
+        {
+            OknoHaslo oknoHaslo = new OknoHaslo();
+            oknoHaslo.Owner = this;
+            oknoHaslo.ShowDialog();
+
+            if(oknoHaslo.IsAuthorized)
+            {
+                //Przyciski na górnym panelu
+                Btn_Edycja.IsEnabled = false;
+                Btn_Zapisz.IsEnabled = true;
+                Btn_Dodaj.IsEnabled = true;
+                Btn_Usun.IsEnabled = true;
+
+                //Boxy aktywowane do edycji
+                ID_Box.IsEnabled = true;
+            }
+        }
+        private void Zapisz_Click(object sender, RoutedEventArgs e)
+        {
+            //Przyciski na górnym panelu
+            Btn_Zapisz.IsEnabled = false;
+            Btn_Edycja.IsEnabled = true;
+            Btn_Dodaj.IsEnabled = false;
+            Btn_Usun.IsEnabled = false;
+
+            //Box'y po edycji
+            ID_Box.IsEnabled = false;
         }
     }
 }
