@@ -12,10 +12,11 @@
         <ComboBox HorizontalAlignment="Left" Margin="145,12,0,0" VerticalAlignment="Top" Width="120"/>
         <CheckBox x:Name="EdytujPola" Content="Edycja" HorizontalAlignment="Left" Margin="520,16,0,0" VerticalAlignment="Top" IsChecked="false"/>
         <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="800"/>
-        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="280,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="false"/>
-        <Button Content="Usuń" HorizontalAlignment="Left" Margin="335,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="false"/>
+        <Button x:Name="Btn_Dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="280,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="false"/>
+        <Button x:Name="Btn_Usun" Content="Usuń" HorizontalAlignment="Left" Margin="335,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="false"/>
         <Button Content="Powrót ->" HorizontalAlignment="Left" Margin="700,12,0,0" VerticalAlignment="Top" Width="60" Height="22" Click="MainMenu_Powrot" ToolTip="Powrót do głównego menu"/>
-        <!-- <Button Content="Edycja" HorizontalAlignment="Left" Margin="390,12,0,0" VerticalAlignment="Top" Width="50" Height="22"/> --> 
+        <Button x:Name="Btn_Edycja" Content="Edycja" HorizontalAlignment="Left" Margin="390,12,0,0" VerticalAlignment="Top" Width="50" Height="22" Click="Edycja_Click"/>
+        <Button x:Name="Btn_Zapisz" Content="Zapisz" HorizontalAlignment="Left" Margin="445,12,0,0" VerticalAlignment="Top" Width="50" Height="22" Click="Zapisz_Click" IsEnabled="False"/>
         <!-- /// -->
         <!-- DANE TECHNICZNE -->
         <Rectangle HorizontalAlignment="Left" Margin="40,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Height="200"/>
@@ -33,7 +34,8 @@
         <!-- /// -->
         <!-- DANE UDT -->
         <Rectangle HorizontalAlignment="Left" Height="200" Margin="320,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
-        <TextBox HorizontalAlignment="Left" Margin="390,92,0,0" TextWrapping="Wrap" Text="Dane UDT" VerticalAlignment="Top" Width="60"/>
+        <TextBox HorizontalAlignment="Left" Margin="390,92,0,0" TextWrapping="Wrap" Text="Dane UDT" VerticalAlignment="Top" Width="60" IsHitTestVisible="False" IsReadOnly="True" BorderBrush="Black"/>
+
         <!-- /// -->
     </Grid>
 </Window>
