@@ -7,7 +7,8 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Przy wydaniu przenieś wpisy z sekcji Unreleased do odpowiedniej wersji (z datą).
 
 ## [Unreleased]
-
+- Dodanie nowego przycisku w oknie dźwignic 'Powrót ->'
+- Okno główne poprawnie się zamyka przy przejściu do nowego okna
 
 ### Added
 - Dodaj tutaj nowe funkcje (np. `feat: ...`) i linki do PR/issue.
