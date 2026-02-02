@@ -28,7 +28,7 @@ namespace PomocnikDozorowy
             MessageBox.Show("Pomocnik Dozorowy\n" +
                 "            Program dzięki któremu możesz trzymać informacje\n" +
                 "            o UTB w jednym miejscu!\n\n" +
-                "            © 2024 Pomocnik Dozorowy Team v0.0.0", "Informacje o programie", MessageBoxButton.OK, MessageBoxImage.Information);
+                "            © 2024 Pomocnik Dozorowy Team v0.0.3a", "Informacje o programie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace PomocnikDozorowy
         /// </summary>
         private void wozkiJezdniowe_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Moduł Wózki Jezdniowe jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Moduł Wózki Jezdniowe jest w trakcie programowania.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace PomocnikDozorowy
         /// </summary>
         private void inne_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Moduł Inne jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Moduł Inne jest w trakcie programowania.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
