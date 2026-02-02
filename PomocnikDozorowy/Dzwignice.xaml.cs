@@ -23,5 +23,12 @@ namespace PomocnikDozorowy
         {
             InitializeComponent();
         }
+
+        private void MainMenu_Powrot(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }
