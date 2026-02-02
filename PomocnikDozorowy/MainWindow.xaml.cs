@@ -49,6 +49,7 @@ namespace PomocnikDozorowy
             //MessageBox.Show("Moduł Dźwignice jest w trakcie tworzenia.", "Moduł w budowie", MessageBoxButton.OK, MessageBoxImage.Information);
             Dzwignice dzwignice = new Dzwignice();
             dzwignice.Show();
+            this.Close();
         }
 
         /// <summary>
