@@ -39,8 +39,10 @@ namespace PomocnikDozorowy
             this.Close();
         }
 
+        
         private void Edycja_Click(object sender, RoutedEventArgs e)
         {
+            /*
             OknoHaslo oknoHaslo = new OknoHaslo();
             //oknoHaslo.Owner = this;
             oknoHaslo.ShowDialog();
@@ -56,7 +58,9 @@ namespace PomocnikDozorowy
                 //Boxy aktywowane do edycji
                 ID_Box.IsEnabled = true;
             }
+            */
         }
+     
         /*
         private void Zapisz_Click(object sender, RoutedEventArgs e)
         {
