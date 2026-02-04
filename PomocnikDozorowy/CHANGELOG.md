@@ -17,7 +17,21 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawki błędów.
 
-## [0.0.3a] - 2006-02-03
+## [0.0.4b] - 2026-02-05
+### Added
+- Dodano możliwość dodania nowej suwnicy
+- Dodano okno w którym dodajemy suwnice
+- Dodano logike zapisu i odczytu suwnic w polach
+- Przejscie z Alpha na Beta
+
+### Changed
+- Wyłączono na chwilę obecną przycisk [Edycja]
+- [ChceckBox Edycja] - wyłączony
+- Przycisk [Dodaj] został na stałe włączony
+- Brak możliwości zmiany danych w oknie dźwignic
+- Chwilowo usunięto przycisk [Zapis] z okna suwnic
+
+## [0.0.3a] - 2026-02-03
 ### Added
 - Dodanie nowego przycisku w oknie dźwignic 'Powrót ->', 'Edycja', 'Zapisz'
 - Dodano przykładowe okno autoryzacji
