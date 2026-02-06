@@ -39,46 +39,17 @@ namespace PomocnikDozorowy
             this.Close();
         }
 
-        
+
         private void Edycja_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            OknoHaslo oknoHaslo = new OknoHaslo();
-            //oknoHaslo.Owner = this;
-            oknoHaslo.ShowDialog();
-
-            if(oknoHaslo.IsAuthorized)
-            {
-                //Przyciski na górnym panelu
-                Btn_Edycja.IsEnabled = false;
-                //Btn_Zapisz.IsEnabled = true;
-                Btn_Dodaj.IsEnabled = true;
-                Btn_Usun.IsEnabled = true;
-
-                //Boxy aktywowane do edycji
-                ID_Box.IsEnabled = true;
-            }
-            */
+            EdycjaSuwnic edycjaSwunic = new();
+            edycjaSwunic.ShowDialog();
         }
-     
-        /*
-        private void Zapisz_Click(object sender, RoutedEventArgs e)
-        {
-            //Przyciski na górnym panelu
-            Btn_Zapisz.IsEnabled = false;
-            Btn_Edycja.IsEnabled = true;
-            Btn_Dodaj.IsEnabled = false;
-            Btn_Usun.IsEnabled = false;
-
-            //Box'y po edycji
-            ID_Box.IsEnabled = false;
-        }
-        */
 
         private void Btn_Dodaj_Click(object sender, RoutedEventArgs e)
         {
             DodajSuwnice dodajSuwnice = new DodajSuwnice();
-            dodajSuwnice.Show();
+            dodajSuwnice.ShowDialog();
         }
 
         //Wypełnia odpowiednie TextBoxy danymi z Json

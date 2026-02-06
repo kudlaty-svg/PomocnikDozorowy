@@ -17,7 +17,27 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawki błędów.
 
-## [0.0.4b] - 2026-02-05
+## [0.2.0] - 2026-02-07
+### Added
+- Dodano nowe okno [Edycja Suwnicy]
+- Wstępna inicjalizacja okna
+
+### Changed
+- Zmieniono całkowicie działanie przycisku [Edycja]
+- Usunięto stary niepotrzebny kod
+- Brak możliwości zmiany rozmiaru okna
+
+### Fixed
+- Kliknięcie Anuluj poprawnie zamyka okno, nie wywala aplikacji : drobna literówka
+- Okno [Edycja Suwnic] poprawnie się wyświetla na środku (czasami znikało poza ramami ekranu)
+
+## [0.1.1b] HOTFIX #1
+### Fixed
+- Poprawne wyświetlanie okien
+- Blokada boxów w oknie dźwignic
+
+---
+## [0.1.0b] - 2026-02-05
 ### Added
 - Dodano możliwość dodania nowej suwnicy
 - Dodano okno w którym dodajemy suwnice
@@ -31,6 +51,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Brak możliwości zmiany danych w oknie dźwignic
 - Chwilowo usunięto przycisk [Zapis] z okna suwnic
 
+---
 ## [0.0.3a] - 2026-02-03
 ### Added
 - Dodanie nowego przycisku w oknie dźwignic 'Powrót ->', 'Edycja', 'Zapisz'
@@ -45,6 +66,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Box "Dane UTD" jest już tylko do odczytu
 - Okno autoryzacji poprawnie teraz wyświetla przycisk "ok" - poprzednio połowa znikała
 
+---
 ## [0.0.2a] - 2026-01-12
 ### Added
 - Dodano nowe okno po kliknięciu przycisku "Dźwignice".
@@ -63,6 +85,7 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawka nazwy okna z "Dzwignice" na "Dźwignice".
 
+---
 ## [0.0.1a] - 2026-01-11
 ### Added
 - Uaktualniono informacje o wersji do 0.0.1a (Alpha)
@@ -75,7 +98,8 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawiono drobne błędy w interfejsie użytkownika.
 - Poprawne wyświetlanie napisu "Informacje o programie", oraz przycisku "?".
-- 
+
+---
 ## [0.0.0] - 2026-01-10
 ### Added
 - Pierwsze wydanie projektu.

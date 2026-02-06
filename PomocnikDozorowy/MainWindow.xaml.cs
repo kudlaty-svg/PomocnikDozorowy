@@ -28,7 +28,7 @@ namespace PomocnikDozorowy
             MessageBox.Show("Pomocnik Dozorowy\n" +
                 "            Program dzięki któremu możesz trzymać informacje\n" +
                 "            o UTB w jednym miejscu!\n\n" +
-                "            © 2024 Pomocnik Dozorowy Team v0.0.3a", "Informacje o programie", MessageBoxButton.OK, MessageBoxImage.Information);
+                "            © 2024 Pomocnik Dozorowy Team v0.1.1a", "Informacje o programie", MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         /// <summary>

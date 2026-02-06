@@ -6,6 +6,21 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Obrazy\pomdoz_ikona.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Obrazy\pomdoz_ikona.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Obrazy\pomdoz_ikona.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Obrazy\pomdoz_ikona.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
 
 </Project>
