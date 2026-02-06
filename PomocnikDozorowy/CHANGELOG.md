@@ -17,10 +17,11 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 ### Fixed
 - Poprawki błędów.
 
-## [0.2.0] - 2026-02-07
+## [0.2.0] - 2026-02-..
 ### Added
 - Dodano nowe okno [Edycja Suwnicy]
 - Wstępna inicjalizacja okna
+- Dodano możliwość minimalizacji okien w aplikacji
 
 ### Changed
 - Zmieniono całkowicie działanie przycisku [Edycja]

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PomocnikDozorowy"
         mc:Ignorable="d"
-        Title="Dodaj Suwnice" Height="600" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Dodaj Suwnice" Height="600" Width="400" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Dane Techniczne:" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Tb_ID" HorizontalAlignment="Left" Margin="173,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
