@@ -55,7 +55,7 @@ namespace PomocnikDozorowy
                 listaSuwnic = new List<Suwnice>();
             }
             listaSuwnic.Add(suwnica);
-
+            
             string jsonZapis = JsonSerializer.Serialize(listaSuwnic, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(sciezkaPliku, jsonZapis);
 

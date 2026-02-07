@@ -22,15 +22,21 @@ Format zgodny z "Keep a Changelog" oraz semver: MAJOR.MINOR.PATCH
 - Dodano nowe okno [Edycja Suwnicy]
 - Wstępna inicjalizacja okna
 - Dodano możliwość minimalizacji okien w aplikacji
+- Dodano tabele DANE TECHNICZNE w Dźwignicach
 
 ### Changed
 - Zmieniono całkowicie działanie przycisku [Edycja]
 - Usunięto stary niepotrzebny kod
 - Brak możliwości zmiany rozmiaru okna
+- Zmieniono nazwę z DANE TECHNICZNE -> DANE IDENTYFIKACYJNE
 
 ### Fixed
 - Kliknięcie Anuluj poprawnie zamyka okno, nie wywala aplikacji : drobna literówka
 - Okno [Edycja Suwnic] poprawnie się wyświetla na środku (czasami znikało poza ramami ekranu)
+- Edycja danych suwnicy poprawnie nadpisuje dane
+- "Status" w oknie DANE UDT jest poprawnie wyświetlany obok TextBox'a
+- Zmieniono rozmiar okna Dźwignice aby poprawnie wyświetlać przycisk powrót i tablice UDT
+- TextBox Poducent wyświetla sie teraz prawidłowo (poprzednio nachodziło na TextBox wyżej)
 
 ## [0.1.1b] HOTFIX #1
 ### Fixed

@@ -29,7 +29,8 @@ namespace PomocnikDozorowy
             InitializeComponent();
             WczytajSuwniceDoComboBox();
         }
-        List<Suwnice> listaSwunic;
+
+        List<Suwnice> listaSuwnic;
         string sciezkaPliku = "suwnice.json";
 
         private void MainMenu_Powrot(object sender, RoutedEventArgs e)
@@ -44,12 +45,14 @@ namespace PomocnikDozorowy
         {
             EdycjaSuwnic edycjaSwunic = new();
             edycjaSwunic.ShowDialog();
+            WczytajSuwnice();
         }
 
         private void Btn_Dodaj_Click(object sender, RoutedEventArgs e)
         {
             DodajSuwnice dodajSuwnice = new DodajSuwnice();
             dodajSuwnice.ShowDialog();
+            WczytajSuwnice();
         }
 
         //Wypełnia odpowiednie TextBoxy danymi z Json
@@ -59,7 +62,7 @@ namespace PomocnikDozorowy
                 return;
 
             string? wybraneID = Wybor_ID.SelectedItem.ToString();
-            Suwnice? wybranaSuwnica = listaSwunic.FirstOrDefault(s => s.ID == wybraneID);
+            Suwnice? wybranaSuwnica = listaSuwnic.FirstOrDefault(s => s.ID == wybraneID);
 
             if(wybranaSuwnica != null)
             {
@@ -76,15 +79,28 @@ namespace PomocnikDozorowy
             if (File.Exists(sciezkaPliku))
             {
                 string json = File.ReadAllText(sciezkaPliku);
-                listaSwunic = JsonSerializer.Deserialize<List<Suwnice>>(json) ?? new List<Suwnice>();
+                listaSuwnic = JsonSerializer.Deserialize<List<Suwnice>>(json) ?? new List<Suwnice>();
 
-                Wybor_ID.ItemsSource = listaSwunic.Select(s => s.ID).ToList();
+                Wybor_ID.ItemsSource = listaSuwnic.Select(s => s.ID).ToList();
             }
             else
             {
-                listaSwunic = new List<Suwnice>();
+                listaSuwnic = new List<Suwnice>();
             }
 
+
+        }
+        //Automatyczne odświeżanie ComboCox'a
+        private void WczytajSuwnice()
+        {
+            if (!File.Exists(sciezkaPliku))
+                return;
+
+            string json = File.ReadAllText(sciezkaPliku);
+            listaSuwnic = JsonSerializer.Deserialize<List<Suwnice>>(json) ?? new List<Suwnice>();
+
+            Wybor_ID.ItemsSource = null;
+            Wybor_ID.ItemsSource = listaSuwnic.Select(s => s.ID).ToList();
         }
     }
 }

@@ -5,43 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PomocnikDozorowy"
         mc:Ignorable="d"
-        Title="Dźwignice" Height="450" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Dźwignice" Height="450" Width="820" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
     <Grid>
         <!-- GÓRNA CZĘŚĆ OKNA -->
         <Label Content="Wybierz ID urządzenia" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="Wybor_ID" HorizontalAlignment="Left" Margin="145,12,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Wybor_ID_SelectionChanged"/>
         <!--<CheckBox x:Name="EdytujPola" Content="Edycja" HorizontalAlignment="Left" Margin="520,16,0,0" VerticalAlignment="Top" IsChecked="false"/> -->
-        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+        <Rectangle HorizontalAlignment="Center" Height="1" Margin="0,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="820"/>
         <Button x:Name="Btn_Dodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="280,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="True" Click="Btn_Dodaj_Click" ToolTip="Dodaje nowe urządzenie transportu bliskiego(suwnica)"/>
         <Button x:Name="Btn_Usun" Content="Usuń" HorizontalAlignment="Left" Margin="335,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="false" ToolTip="Usuwa wybrane urządzenie transportu bliskiego(suwnica)"/>
-        <Button Content="Powrót ->" HorizontalAlignment="Left" Margin="700,12,0,0" VerticalAlignment="Top" Width="60" Height="22" Click="MainMenu_Powrot" ToolTip="Powrót do głównego okna"/>
+        <Button Content="Powrót ->" HorizontalAlignment="Left" Margin="730,12,0,0" VerticalAlignment="Top" Width="60" Height="22" Click="MainMenu_Powrot" ToolTip="Powrót do głównego okna"/>
         <Button x:Name="Btn_Edycja" Content="Edycja" HorizontalAlignment="Left" Margin="390,12,0,0" VerticalAlignment="Top" Width="50" Height="22" IsEnabled="True" Click="Edycja_Click"/>
         <!--<Button x:Name="Btn_Zapisz" Content="Zapisz" HorizontalAlignment="Left" Margin="445,12,0,0" VerticalAlignment="Top" Width="50" Height="22" Click="Zapisz_Click" IsEnabled="False"/>-->
         <!-- /// -->
+        <!-- DANE IDENTYFIKACYJNE -->
+        <Rectangle HorizontalAlignment="Left" Margin="20,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="250" Height="235"/>
+        <TextBox HorizontalAlignment="Left" Margin="75,55,0,0" TextWrapping="Wrap" Text="DANE IDENTYFIKACYJNE" VerticalAlignment="Top" Width="140" IsReadOnly="True" BorderBrush="Black" IsHitTestVisible="false" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,88,0,0" TextWrapping="Wrap" Text="ID Dżwignicy" VerticalAlignment="Top" ToolTip="Identyfikator suwnicy w zakładzie"/>
+        <TextBox x:Name="ID_Box" HorizontalAlignment="Left" Margin="145,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,118,0,0" TextWrapping="Wrap" Text="Nr Fabryczny" VerticalAlignment="Top" ToolTip="Numer nadany przez fabrykę"/>
+        <TextBox x:Name="NrFab_Box" HorizontalAlignment="Left" Margin="145,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,148,0,0" TextWrapping="Wrap" Text="Rok produkcji" VerticalAlignment="Top"/>
+        <TextBox x:Name="RokProd_Box" HorizontalAlignment="Left" Margin="145,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False" ToolTip="Rok produkcji urządzenia"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,178,0,0" TextWrapping="Wrap" Text="Rok montażu" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="145,178,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,208,0,0" TextWrapping="Wrap" Text="Producent" VerticalAlignment="Top"/>
+        <TextBox x:Name="Producent_Box" HorizontalAlignment="Left" Margin="145,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,238,0,0" TextWrapping="Wrap" Text="Lokalizacja" VerticalAlignment="Top"/>
+        <TextBox x:Name="Lokalizacja_Box" HorizontalAlignment="Left" Margin="145,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,268,0,0" TextWrapping="Wrap" Text="Właściciel" VerticalAlignment="Top"/>
+        <TextBox x:Name="Wlasciciel_Box" HorizontalAlignment="Left" Margin="145,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <!-- /// -->
         <!-- DANE TECHNICZNE -->
-        <Rectangle HorizontalAlignment="Left" Margin="40,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200" Height="200"/>
-        <TextBox HorizontalAlignment="left" Margin="85,92,0,0" TextWrapping="Wrap" Text="DANE TECHNICZNE" VerticalAlignment="Top" Width="110" IsReadOnly="True" BorderBrush="Black" IsHitTestVisible="false"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,125,0,0" TextWrapping="Wrap" Text="ID Dżwignicy" VerticalAlignment="Top" ToolTip="Identyfikator suwnicy"/>
-        <TextBox x:Name="ID_Box" HorizontalAlignment="Left" Margin="130,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,155,0,0" TextWrapping="Wrap" Text="Nr Fabryczny" VerticalAlignment="Top" ToolTip="Nr Fabryczny suwnicy"/>
-        <TextBox x:Name="NrFab_Box" HorizontalAlignment="Left" Margin="130,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,185,0,0" TextWrapping="Wrap" Text="Rok produkcji" VerticalAlignment="Top"/>
-        <TextBox x:Name="RokProd_Box" HorizontalAlignment="Left" Margin="130,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False" ToolTip="Rok produkcji urządzenia"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,215,0,0" TextWrapping="Wrap" Text="Udzwig nominalny" VerticalAlignment="Top"/>
-        <TextBox x:Name="UdzNom_Box" HorizontalAlignment="Left" Margin="155,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="50,245,0,0" TextWrapping="Wrap" Text="Producent" VerticalAlignment="Top"/>
-        <TextBox x:Name="Producent_Box" HorizontalAlignment="Left" Margin="115,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <Rectangle HorizontalAlignment="Left" Height="200" Margin="280,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+        <TextBox HorizontalAlignment="Left" Margin="345,55,0,0" TextWrapping="Wrap" Text="DANE TECHNICZNE" VerticalAlignment="Top" Width="120" IsHitTestVisible="False" IsReadOnly="True" BorderBrush="Black" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,88,0,0" TextWrapping="Wrap" Text="Rodzaj swunicy" VerticalAlignment="Top"/>
+        <TextBox x:Name="RodzajSuwnicy_Box" HorizontalAlignment="Left" Margin="405,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,118,0,0" TextWrapping="Wrap" Text="Udzwig nominalny" VerticalAlignment="Top"/>
+        <TextBox x:Name="UdzNom_Box" HorizontalAlignment="Left" Margin="405,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,148,0,0" TextWrapping="Wrap" Text="Rozpiętość (m)" VerticalAlignment="Top"/>
+        <TextBox x:Name="Rozpietosc_Box" HorizontalAlignment="Left" Margin="405,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
         <!-- /// -->
         <!-- DANE UDT -->
-        <Rectangle HorizontalAlignment="Left" Height="200" Margin="320,100,0,0" Stroke="Black" VerticalAlignment="Top" Width="200"/>
-        <TextBox HorizontalAlignment="Left" Margin="390,92,0,0" TextWrapping="Wrap" Text="Dane UDT" VerticalAlignment="Top" Width="60" IsHitTestVisible="False" IsReadOnly="True" BorderBrush="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="330,125,0,0" TextWrapping="Wrap" Text="Nr Ewidencyjny UDT" VerticalAlignment="Top"/>
-        <TextBox x:Name="NrUDT_Box" HorizontalAlignment="Left" Margin="446,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="65" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="330,155,0,0" TextWrapping="Wrap" Text="Rodzaj dozoru" VerticalAlignment="Top" ToolTip="pełny / ograniczony / uproszczony"/>
-        <TextBox x:Name="RodzajDozoru_Box" HorizontalAlignment="Left" Margin="411,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="330,185,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" ToolTip="dopuszczona / wstrzymana / wyłączona"/>
-        <TextBox x:Name="Status_Box" HorizontalAlignment="Left" Margin="411,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
-
+        <Rectangle HorizontalAlignment="Left" Height="200" Margin="540,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="250"/>
+        <TextBox HorizontalAlignment="Left" Margin="635,55,0,0" TextWrapping="Wrap" Text="Dane UDT" VerticalAlignment="Top" Width="60" IsHitTestVisible="False" IsReadOnly="True" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="550,88,0,0" TextWrapping="Wrap" Text="Nr Ewidencyjny UDT" VerticalAlignment="Top"/>
+        <TextBox x:Name="NrUDT_Box" HorizontalAlignment="Left" Margin="672,88,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="550,118,0,0" TextWrapping="Wrap" Text="Rodzaj dozoru" VerticalAlignment="Top" ToolTip="pełny / ograniczony / uproszczony"/>
+        <TextBox x:Name="RodzajDozoru_Box" HorizontalAlignment="Left" Margin="672,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="550,143,0,0" TextWrapping="Wrap" Text="Status" VerticalAlignment="Top" ToolTip="dopuszczona / wstrzymana / wyłączona"/>
+        <TextBox x:Name="Status_Box" HorizontalAlignment="Left" Margin="672,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" IsEnabled="False"/>
         <!-- /// -->
     </Grid>
 </Window>

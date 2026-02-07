@@ -48,5 +48,56 @@ namespace PomocnikDozorowy
         {
             this.Close();
         }
+
+        private void ID_suwnic_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ID_suwnic.SelectedItem == null)
+                return;
+
+            string? wybraneID = ID_suwnic.SelectedItem.ToString();
+            Suwnice? wybranaSuwnica = listaSuwnic.FirstOrDefault(s => s.ID == wybraneID);
+
+            if(wybranaSuwnica != null)
+            {
+                Stare_ID.Text = wybranaSuwnica.ID;
+            }
+
+        }
+
+        private void Btn_Zapisz_Click(object sender, RoutedEventArgs e)
+        {
+            Suwnice suwnica = new Suwnice();
+            /*if (string.IsNullOrEmpty(Nowe_ID.Text))
+            {
+                MessageBox.Show("Pole [Nowe ID Dźwignicy] nie może być puste!");
+                return;
+            }*/
+
+            if (!File.Exists(sciezkaPliku))
+            {
+                MessageBox.Show("Brak pliku danych!");
+                return;
+            }
+
+            string json = File.ReadAllText(sciezkaPliku);
+            listaSuwnic = JsonSerializer.Deserialize<List<Suwnice>>(json) ?? new List<Suwnice>();
+
+            //szukanie suwnicy do edycji
+            Suwnice? edytowana = listaSuwnic.FirstOrDefault(s => s.ID == Stare_ID.Text);
+
+            if (edytowana == null)
+            {
+                MessageBox.Show("Nie znaleziono suwnicy do edycji!");
+                return;
+            }
+
+            edytowana.ID = Nowe_ID.Text;
+
+            string jsonZapis = JsonSerializer.Serialize(listaSuwnic, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(sciezkaPliku, jsonZapis);
+
+            MessageBox.Show("Dane suwnicy zostały zaktualizowane!");
+            this.Close();
+        }
     }
 }
