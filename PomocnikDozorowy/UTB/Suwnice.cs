@@ -22,12 +22,13 @@ namespace PomocnikDozorowy.UTB
         //Dane Techniczne suwnicy
         public string? RodzajSuwnicy { get; set; } // Pomostowa / Bramowa / Półbramowa
         public string? UdzwigNominalny { get; set; } // kg/t
-        public int Rozpietosc { get; set; } //Podawane w metrach
+        public int Rozpietosc { get; set; } // Podawane w metrach
         public int WysokoscPodnoszenia { get; set; } //Podawane w metrach
         public int LiczbaBiegow { get; set; }
         public string? KlasaPracy {get; set; } // np: FEM / ISO
         public string? Zasilanie { get; set; } // np 3x400V, szynoprzewód
-        public string? TypSterowania {  get; set; } //kaseta / radio / kabina
+        public string? TypSterowania {  get; set; } // kaseta / radio / kabina
+        public string? GrupaNatezeniaPracy { get; set; } // A1, A7, G3 itp
 
 
 
